@@ -16,3 +16,7 @@ a = math.pi *(r**2)
 #The area formula is indicated using “math.pi” to obtain the mathematical constant π from the math library and we use (r**2) to square the radius.
 
 print("El área del círculo a partir del valor del radio " "es: ",round(a,2), "cm²") #Le pedimos al programa que saque el área del círculo a partir del radio redondeado a 2 cifras decimales “round(a,2)” y añadimos la medida "cm2".
+
+
+_Podríamos utilizar también dos máscaras %3.2f y %área de la siguiente forma: “print(‘El area es %3.2f . ‘ % area, ‘cm’)” # % indica que es la máscara y 3 es la parte entera que contemplamos que puede tener el resultado que queremos imprimir (el área) y 2 es el número máximo de decimales que queremos que nos salga en nuestro resultado.
+En este caso, los datos de entrada serían: Importar librería math y Capturar el valor del radio. Los procesos serían indicarle a Python que debe usar la fórmula del área= π x radio2.Finalmente la salida del programa sería imprimir el valor resultante del área del círculo en cm2.(Este comentario no lo realizaré en todos los ejercicios ya que al organizar el código fuente se puede entender de forma directa pero lo pongo en el primero para dejar constante que entiendo las partes que conforman el código del programa)._
