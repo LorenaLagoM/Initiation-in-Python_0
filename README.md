@@ -1,2 +1,2 @@
-# Initiation-in-Python_0
+# Initiation-in-Python
 Aim: Consolidate fundamentals of Python through simple exercises.
