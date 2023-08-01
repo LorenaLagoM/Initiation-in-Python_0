@@ -16,7 +16,7 @@ print(números + ".")
 
 número = números.split(sep=",") 
 #“.split” para indicar el caracter que separa los números que forman la lista (“,”).
-#“.split” to indicate the character that separates the numbers that make up the list (“,”).
+#“.split” to indicate the character that separates the numbers that make up the list (“,”). 
 
 print(número) 
 #salida de la lista que muestra los números que forman la lista separados con “,”.
