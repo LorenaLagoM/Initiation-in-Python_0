@@ -1,0 +1,28 @@
+#Escribe un programa en Python que acepte como entrada números separados por comas y luego genere una lista con dichos números.
+#Para terminar de insertar los valores introducimos un “.”.
+
+#Write a Python program that accepts comma-separated numbers as input and then generates a list of those numbers.
+#To finish inserting the values we introduce a “.”.
+
+números = input("Entrada números separados por comas: ") 
+#La función “input()” permite obtener texto escrito por teclado. 
+#Al llegar a la función, el programa se detiene esperando a que escribamos algo y pulsemos “Intro”.
+#The “input()” function allows you to obtain text written on the keyboard.
+#When we reach the function, the program stops waiting for us to write something and press “Enter”.
+
+print(números + ".") 
+#Salida de los números introducidos , se indica que se ha terminado de insertar los valores introduciendo un “.”.
+#Output of the numbers entered , it indicates that the values have finished inserting a “.”.
+
+número = números.split(sep=",") 
+#“.split” para indicar el caracter que separa los números que forman la lista (“,”).
+#“.split” to indicate the character that separates the numbers that make up the list (“,”).
+
+print(número) 
+#salida de la lista que muestra los números que forman la lista separados con “,”.
+#Para comprobar que tenemos una cadena de caracteres (str) y una lista (list) utilizamos “(type(…))”
+#salida de la lista que muestra los números que forman la lista separados con “,”.
+#Para comprobar que tenemos una cadena de caracteres (str) y una lista (list) utilizamos “(type(…))”
+
+print(type(números))
+print(type(número))
