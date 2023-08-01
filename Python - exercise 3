@@ -1,0 +1,27 @@
+#Escribe un programa que indique si una palabra (puede estar almacenada en una variable) tiene vocales y cuantas.
+#Write a program that indicates if a word (it can be stored in a variable) has vowels and how many.
+
+#Definimos una función (obtener_vocales)
+#We define a function (get_vowels)
+
+def obtener_vocales(texto):
+   vocales='aeiouAEIOU' 
+   return set ([c for c in texto if c in vocales]) #utilizamos “set” para que no cuente las vocales que se repitan/we use “set” so that it does not count the vowels that are repeated.
+palabra = input ("Ingresa una palabra: ") 
+
+#“palabra” - vamos a analizar si tiene vocales y cuantas. 
+#Recordar que la función “input()” permite obtener texto escrito por teclado y que al llegar a la función, el programa se detiene esperando a que escribamos algo y pulsemos “Intro”.
+#“word” - we are going to analyze if it has vowels and how many.
+#Remember that the “input()” function allows you to obtain text written on the keyboard and that when you reach the function, the program stops waiting for you to write something and press “Enter”.
+
+print("Las vocales diferentes presentes en la palabra son: ")
+
+print(obtener_vocales (palabra)) 
+#utilizamos la función definida anteriormente para obtener las vocales presentes en la palabra introducida.
+#we use the function defined above to obtain the vowels present in the entered word.
+
+print("El número de vocales diferentes presentes en la palabra es:")
+
+print(len(obtener_vocales(palabra))) 
+#utilizamos la función “len” para que nos devuelva contadas las vocales que obtenemos al utilizar la función definida previamente.
+#we use the “len” function so that it returns counted the vowels that we obtain when using the previously defined function.
