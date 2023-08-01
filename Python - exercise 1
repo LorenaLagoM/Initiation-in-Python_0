@@ -1,7 +1,7 @@
 #Program in Python that accepts the radius of a circle as a value, calculates its area and prints it on the screen.
 #Programa en Python que acepte como valor el radio de un círculo, calcule su área y la imprima por pantalla. 
 
-import math
+import math 
 #Importa la librería math que proporciona acceso a funciones matemáticas que no sean utilizadas con números complejos.
 #Imports the math library which provides access to mathematical functions that are not used with complex numbers.
 
