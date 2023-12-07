@@ -1,0 +1,26 @@
+#9. Crea un programa que pida tres listas por teclado y luego las concatene usando como separador el carácter ‘-‘.
+#9. Create a program that requests three lists by keyboard and then concatenates them using the '-' character as a separator.
+
+#Inicializamos las tres listas:
+lista_identificadores=[]
+lista_nombres=[]
+lista_apellidos=[]
+#Preparar ciclo "for" para ir añadiendo los datos que queremos que tengan las listas que vamos a crear:
+for x in range (3): #preparamos un ciclo “for” de 3 vueltas (podrían ser más, todas las que necesitemos) y vamos a añadir los datos como cadena de caracteres "str".
+   valor1=str(input("Ingrese el indicador: "))
+   valor2=str(input("Ingrese un nombre: "))
+   valor3=str(input("Ingrese un apellido: "))
+#Mediante el método “.append” conseguimos que nuestro programa tome los datos que hemos ido introduciendo durante el ciclo “for” como argumento y que lo agregue a las listas inicializadas anteriormente.
+   lista_identificadores.append(valor1)
+   lista_nombres.append(valor2)
+   lista_apellidos.append(valor3)
+#Imprimir las listas creadas - salida
+print("A continuación se muestran las 3 listas creadas: ")
+print(lista_identificadores)
+print(lista_nombres)
+print(lista_identificadores)
+#Concatenar las listas creadas usando como separador el carácter "-" mediante ("carácter separador".join), así especificamos el separador que se utilizará en la cadena de listas concatenadas.
+concatenar="-".join(lista_identificadores+lista_nombres+lista_apellidos)
+#Imprimi la salida de la lista concatenada:
+print("A continuación se muestra la concatenación de las 3 listas creadas: ")
+print(concatenar)
