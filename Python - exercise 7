@@ -1,0 +1,10 @@
+#7. Crea un programa que calcule la suma total de los dígitos del número. Es decir, 567 será 5+6+7 = 18
+#7. Create a program that calculates the total sum of the digits of the number. That is, 567 will be 5+6+7 = 18
+
+número=int(input("Ingresa el número: ")) #Introducimos el valor de la variable “número” por teclado gracias a la función “input()”. Será el número del que el programa realizará la suma total de los dígitos que lo componen. 
+suma=0 # Inicializando la variable “suma”, que utilizaremos para definir el proces a realizar en el código.
+while True: #bucle “while” que permite repetir la ejecución de un grupo de instrucciones mientras se cumpla una condición (true).
+while número>0: #el bucle se realizará si la variable número es mayor que “0”. En el primer bucle obtendremos el último dígito y así sucesivamente.
+   suma=suma+(número%10) #operador de módulo (“%”). Retorna el remanente de la división del operando izquierdo por el operando derecho (se utiliza para obtener el residuo).
+   número=número//10 #operador aritmético (“//”). Realiza la división con resultado de número entero. 
+print("La suma total de los dígitos del número es: ", suma) #Resultado de la suma incluido en nuestra variable “suma”.
