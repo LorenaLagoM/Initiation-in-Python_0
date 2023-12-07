@@ -1,0 +1,13 @@
+#5. Escriba un programa que devuelva "Verdadero" si existe un archivo en una carpeta o "Falso" en caso contrario.
+#5. Write a program that returns “True” if a file exists in a folder or “False” otherwise.
+
+fichero=input("Introduce el nombre del fichero que quieres determinar si existe: ")
+#La función “input()” permite obtener texto, al llegar a la función, el programa se detiene esperando a que escribamos algo y pulsemos “Intro”.
+#Para este ejercicio utilicé lo aprendido en gestión de errores.
+try: #Vamos a intentar que el programa abra el fichero del que el usuario del programa introdujo el nombre anteriormente. Si lo logra, mandará la salida de que el fichero si que existe.
+   file = open(fichero)
+   print(file) # “File handler” envía la salida del logging a un archivo de disco. Por tanto, la salida será el logging del fichero y además la salida que hemos puesto a continuación:
+   print ("True - El fichero si exite")
+except FileNotFoundError: #Podemos poner tantos “except” como queramos/necesitemos. En este caso el fichero que intentamos abrir no existe. No se encuentra y la salida será “False – El fichero que está buscando no exite”. (hace referencia al error “FileNorFoundError”).
+   print('False - El fichero que está buscando no existe')
+   exit() #salimos/finalizamos.
