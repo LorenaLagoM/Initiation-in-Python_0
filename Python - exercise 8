@@ -1,0 +1,8 @@
+#8. Escribe un programa que indique si un número introducido por teclado es par o impar.
+#8. Write a program that indicates whether a number entered by the keyboard is even or odd.
+
+n = int(input("Introduce un número por teclado: ")) #Introducimos el valor de la variable “n” por teclado gracias a la función “input()”. Será el número del que el programa tendrá que indicar si es par o impar.
+if n % 2 == 0: # La función “if” “else” en Python es una función condicional. En nuestro caso “if” (condición a evaluar, “si se cumple…”) el número sería “par”. El operador de módulo (“%”). Retorna el remanente de la división del operando izquierdo por el operando derecho. Si esta operación resultase igual a “0” gracias al operador relacional (“==) el programa devolvería “True” (por tanto, el operador izquierdo y derecho serían iguales).
+   print("El número introducido es par")
+else: #El resto de casos “else” (que no cumplen la condición a evaluar) obtendríamos la salida “El número introducido es “impar”,
+   print("El número introduciddo es impar")
