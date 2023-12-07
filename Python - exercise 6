@@ -1,0 +1,10 @@
+#6. Escriba un programa que sume todos los números enteros del 0 al n (n puede ser una variable o ingresarse mediante el teclado).
+#6. Write a program that adds all the integers from 0 to n (n can be a variable or entered using the keyboard).
+
+print("Introduzca el valor de 'n': ") 
+x=int(input()) #Introducimos el valor de “n”. La variable “x” va a hacer referencia al valor de “n” (número entero “int” introducido por teclado gracias a la función “input()”.
+y=0 # Inicializando la variable “y” que utilizaremos para obtener la suma de todos los números enteros desde 0 hasta “n” (por tanto, es la variable que contendrá todos los valores del rango a sumar).
+for i in range (0, x+1): #El bucle “for” se utiliza para recorrer los elementos de un objeto iterable y ejecutar un bloque de código. En cada paso de la iteración se tiene en cuenta a un único elemento del objeto iterable, sobre el cuál se pueden aplicar una serie de operaciones. Su sintaxis es la siguiente: for <elem> (en nuestro caso “i”) in <iterable>: (en nuestro caso el rango que vamos a delimitar desde “0” hasta nuestra variable “x” y una corrección (+1) sino el número entero que introduzcamos como valor de “n” no se sumará). Finalmente añadimos nuestro código (la suma de cada uno de los elementos, uno tras otro para conseguir la suma de todos los números enteros del rango).
+   print(i) # salida de la variable “i” que será la variable de control.
+   y=y+i #nuestro código.
+print("La suma es: ",y) #El resultado de la suma del rango de números enteros delimitado por la varible “x” en la que el usuario define “n”. 
