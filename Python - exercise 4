@@ -1,0 +1,32 @@
+#4.	Escribe una calculadora en Python que permita solicitar dos números desde el teclado y luego sumar, restar y/o multiplicar dos números, enteros y decimales. 
+#4. Write a calculator in Python that allows you to request two numbers from the keyboard and then add, restart and/or multiply two numbers, integers and decimals.
+
+n1 = int(input("Introduce tu primer número (entero): ") ) #Introducir un número entero (int). 
+#La función “input()” permite obtener texto escrito por teclado y que al llegar a la función, el programa se detiene esperando a que escribamos algo y pulsemos “Intro”.
+n2 = float(input("Introduce tu segundo número (decimal): ") ) #Introducir un número decimal (float, coma flotante). 
+
+opcion = 0 #inicializando la variable “opción” que utilizaremos para elegir la operación a realizar.
+while True: #bucle “while” que permite repetir la ejecución de un grupo de instrucciones mientras se cumpla una condición (true).
+   print("""
+   ¿Qué operación deseas realizar en la calculadora?
+  
+    1) Sumar los dos números
+    2) Restar los dos números
+    3) Multiplicar los dos números
+    4) Apagar la calculadora
+  
+   """)
+   opcion = int(input("Elige la operación que deseas realizar: "))#pusimos “int” porque hay que introducir el valor entero 1,2,3 o 4 (que son las opciones de nuestra calculadora)
+   if opcion == 1: #si la opción es 1, debemos obtener la salida de la suma de las variables introducidas por el usuario del programa.
+       print(" ")
+       print("RESULTADO: La suma de",n1,"+",n2,"es igual a",n1+n2)
+   elif opcion == 2: #si la opción es 2, debemos obtener la salida de la resta.
+       print(" ")
+       print("RESULTADO: La resta de",n1,"-",n2,"es igual a",n1-n2)
+   elif opcion == 3: #si la opción es 3, debemos obtener la salida de la multiplicación.
+       print(" ")
+       print("RESULTADO: El producto de",n1,"*",n2,"es igual a",n1*n2)
+   elif opcion == 4: #si la opción es 4, se finalizará el bucle while (break) y, por tanto, se apagará nuestra calculadora.
+       break
+   else: #si, por el contrario, no es ninguna de las anteriores, obtendremos como salida que la opción que le hemos introducido a nuestra calculadora es incorrecta.
+       print("La opción introducida es incorrecta")
