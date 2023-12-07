@@ -1,0 +1,13 @@
+#10. Escribe un programa que acepte por teclado un número y elimine el carácter en la posición “n” de la lista [5,34,54,23,12,7,8].
+#10. Write a program that accepts a number from the keyboard and deletes the character in position “n” from the list [5,34,54,23,12,7,8].
+
+#Creamos la lista definida en el ejercicio [5,34,54,23,12,7,8] y mediante “print” le indicamos que la muestre como salida durante la ejecución del programa:
+lista=[5,34,54,23,12,7,8]
+print("La lista definida en el ejercicio es: ")
+print(lista)
+n=int(input("Ingrese un número entero (situado en el rango entre 0 y 6) que será la posición del carácter que se elimine de la lista: ")) # le pedimos al usuario que introduzca el valor de la variable "n" (posición) por teclado gracias a la función "input()". Se le indica al usuario que el número entero "int" introducido debe estar en el rango entre 0 y 6 ya que nuestra lista tiene las posiciones 0,1,2,3,4,5 y 6.
+#Eliminar el carácter en la posición “n”:
+del lista[n] #"del" permite eliminar un elemento o varios elementos a la vez de una lista, e incluso la misma lista.
+#Salida de la lista una vez eliminado el carácter en la posición “n”:
+print("Una vez eliminado el carácter seleccionado, esta será la lista resultante: ")
+print(lista)
